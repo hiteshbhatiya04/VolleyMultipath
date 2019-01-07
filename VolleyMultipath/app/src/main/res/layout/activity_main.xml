@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="Title"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/edit_circular_title"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1.3"
+                android:background="@drawable/edit_profilebg"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="Date"
+                android:textColor="@color/colorBlack"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/edit_circular_date"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_weight="1.3"
+                android:background="@drawable/edit_profilebg"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:text="Description"
+                android:textColor="@color/colorBlack"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/edit_circular_des"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_weight="1.3"
+                android:background="@drawable/edit_profilebg"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="Documents"
+                android:textColor="@color/colorBlack"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"  />
+
+            <TextView
+                android:id="@+id/txt_pdf_upload"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1.3"
+                android:background="@drawable/edit_profilebg"
+                android:gravity="center"
+                android:hint="select file"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <Button
+            android:id="@+id/btn_upload_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_shape_one"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="Upload"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</RelativeLayout>
